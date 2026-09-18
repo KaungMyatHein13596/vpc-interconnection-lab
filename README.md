@@ -15,7 +15,7 @@ Operator role — standing in for the real companies involved, which
 are kept confidential.
 
 ## Architecture
-![architecture diagram](diagram_lab.png)
+![architecture diagram](diagram_lab.jpg)
 
 - VPC-ICP (10.0.0.0/16) — simulates the cloud provider. Runs an
   EC2 web server (icp-web) whose Security Group only accepts port 80
