@@ -11,7 +11,7 @@ model using two AWS VPCs joined by a VPC Peering Connection.
 
 Throughout this document, ICP refers to a generalized International
 Cloud Provider role, and NTO refers to a generalized National Telecom
-Operator role — standing in for the real companies involved, which
+Operator role, standing in for the real companies involved, which
 are kept confidential.
 
 ## Architecture
@@ -27,7 +27,7 @@ are kept confidential.
 
 ## What this proves
 - Traffic reaches icp-web only over the private peering path, using
-  private IP addresses — no public internet hop involved.
+  private IP addresses, no public internet hop involved.
 - icp-web's public IP is unreachable from the open internet by design
   (see screenshot), because the Security Group scopes HTTP access to
   the peer VPC's CIDR only.
