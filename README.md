@@ -17,12 +17,12 @@ are kept confidential.
 ## Architecture
 ![architecture diagram](diagram_lab.jpg)
 
-- VPC-ICP (10.0.0.0/16) — simulates the cloud provider. Runs an
+- VPC-ICP (10.0.0.0/16) - simulates the cloud provider. Runs an
   EC2 web server (icp-web) whose Security Group only accepts port 80
   traffic from the NTO VPC's CIDR block, not from the open internet.
-- VPC-NTO (10.1.0.0/16) — simulates the telecom operator. Runs a
+- VPC-NTO (10.1.0.0/16) - simulates the telecom operator. Runs a
   client EC2 instance (nto-subscriber) used to reach icp-web.
-- VPC Peering Connection — the private link between the two VPCs,
+- VPC Peering Connection - the private link between the two VPCs,
   standing in for the physical cross-connect.
 
 ## What this proves
@@ -50,7 +50,7 @@ AWS VPC, Subnets, Internet Gateways, Route Tables, Security Groups,
 EC2, VPC Peering Connections, EC2 Instance Connect.
 
 ## Screenshots
-See /screenshots — includes both route tables, the active peering
+See /screenshots - includes both route tables, the active peering
 connection, the security group rules, the successful curl output, and
 the failed public-access attempt.
 
